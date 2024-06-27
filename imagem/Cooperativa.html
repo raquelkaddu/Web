@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://127.0.0.1:5500/entraroucadastrar.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <script type="text/javascript" src="./Cooperativa_files/style.js.download"></script>
+    
+
+    <title>Cooperativa</title>
+<link rel="stylesheet" href="./Cooperativa_files/bootstrap-icons.min.css"><link rel="stylesheet" type="text/css" href="./Cooperativa_files/style.css"><link href="./Cooperativa_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"></head>
+<body class="grid-layout">
+    <form id="login-form">
+        <div class="Entrar">
+           IDENTIFICAÇÃO
+        </div>
+        
+         <div class="input-box">
+         <label for="email">*E-mail ou CPF</label>
+         <input id="email" type="text" name="email" placeholder="Digite seu email ou CPF" required="">
+         </div>
+         <h2>Esqueci minha senha</h2>
+         
+      <button class="btn btn-success">
+         ENTRAR
+       </button>
+       <h3>______________ou_______________</h3>
+
+       <button class="btn btn-success">
+         QUERO ME CADASTRAR
+       </button> 
+    </form>
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
